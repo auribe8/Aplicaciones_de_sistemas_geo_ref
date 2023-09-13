@@ -1,0 +1,15 @@
+
+<h1> Proyectos </h1>
+{% if nombre is defined and edad is defined and nombre is not none and edad is not none %}
+{%if edad >= 18%}
+
+<p> Propiertario {{nombre}}</p>
+
+<p> Edad {{edad}}</p>
+
+{% else %}
+
+<p>Eres menor de edad</p>
+
+{% endif %}
+{% endif %}
